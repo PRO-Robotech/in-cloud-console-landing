@@ -7,7 +7,7 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({ title }) => {
     <HomeTemplate>
       <div>{title}</div>
       <div>
-        <a href="/docs/">To docs test link</a>
+        <a href="/in-cloud-console-docs/docs/">To docs test link</a>
       </div>
     </HomeTemplate>
   )
