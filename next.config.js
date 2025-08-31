@@ -6,7 +6,7 @@ const nextConfig = {
   },
   output: 'export',
   images: { unoptimized: true },
-  basePath: '/in-cloud-console-docs',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
 }
 
 module.exports = nextConfig
