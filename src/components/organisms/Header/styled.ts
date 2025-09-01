@@ -22,7 +22,6 @@ const LeftPart = styled.div`
 const TitleFont = styled.div`
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 24px;
   line-height: 100%;
   color: #0092ff;

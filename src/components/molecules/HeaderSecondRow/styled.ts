@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const MainTitle = styled.div`
   font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
-  font-style: Bold;
+
   font-size: 120px;
   line-height: 98%;
   letter-spacing: 0%;
