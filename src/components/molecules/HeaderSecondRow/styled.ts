@@ -8,7 +8,7 @@ const MainTitle = styled.div`
   line-height: 98%;
   letter-spacing: 0%;
   text-align: center;
-  text-shadow: 0px 10px 20px rgba(0, 146, 255, 1);
+  text-shadow: 0px 10px 10px rgba(0, 146, 255, 1);
 `
 
 export const Styled = {
