@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import type { GetStaticProps } from 'next'
+import Script from 'next/script'
 import { Meta } from '@components'
 import { HomePage } from '@pages'
 import { THomePage } from '@localTypes/pageTypes'
@@ -9,10 +10,11 @@ export const getStaticProps: GetStaticProps<THomePage> = async () => {
   return { props: { ...homePageMock } }
 }
 
-const Home: FC<THomePage> = ({ meta, title }) => (
+const Home: FC<THomePage> = ({ meta, ...rest }) => (
   <>
     <Meta {...meta} />
-    <HomePage title={title} />
+    <Script src="/js/header.bundle.js" strategy="afterInteractive" />
+    <HomePage {...rest} />
   </>
 )
 

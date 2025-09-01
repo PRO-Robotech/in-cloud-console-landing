@@ -1,0 +1,25 @@
+/* #medusa-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 1543px;
+} */
+
+#medusa-stage {
+  position: fixed; /* stays fixed in viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #15232e;
+  z-index: -1; /* pushes it behind all content */
+}
+
+.medusa-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,2 +1,1 @@
-export { Meta } from './Meta'
 export { Header } from './Header'
