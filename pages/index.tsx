@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps<THomePage> = async () => {
 const Home: FC<THomePage> = ({ meta, ...rest }) => (
   <>
     <Meta {...meta} />
-    <Script src="/js/header.bundle.js" strategy="afterInteractive" />
+    <Script src={`${process.env.NEXT_PUBLIC_BASE_PATH}/js/header.bundle.js`} strategy="afterInteractive" />
     <HomePage {...rest} />
   </>
 )
