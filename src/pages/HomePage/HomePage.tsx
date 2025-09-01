@@ -25,14 +25,30 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
       <div id="medusa-root" />
       <Header navigation={navigation} />
       <MarginTopContainer $margin="107px">
-        <Spacer $space={50} $samespace />
-        <HeaderSecondRow mainTitle={mainTitle} />
-        <Spacer $space={30} $samespace />
-        <VideoRow videoSettings={videoSettings} />
-        <Spacer $space={50} $samespace />
-        <AfterBannerRow afterBannerMiddleText={afterBannerMiddleText} />
-        <Spacer $space={100} $samespace />
-        <Cards cards={cards} />
+        {mainTitle && (
+          <>
+            <Spacer $space={50} $samespace />
+            <HeaderSecondRow mainTitle={mainTitle} />
+          </>
+        )}
+        {videoSettings && (
+          <>
+            <Spacer $space={30} $samespace />
+            <VideoRow videoSettings={videoSettings} />
+          </>
+        )}
+        {afterBannerMiddleText && (
+          <>
+            <Spacer $space={50} $samespace />
+            <AfterBannerRow afterBannerMiddleText={afterBannerMiddleText} />
+          </>
+        )}
+        {cards && (
+          <>
+            <Spacer $space={100} $samespace />
+            <Cards cards={cards} />
+          </>
+        )}
         <Spacer $space={75} $samespace />
         <Footer footer={footer} />
       </MarginTopContainer>

@@ -16,17 +16,17 @@ type TCardsItem = {
 export type THomePage = {
   meta: TMeta
   navigation: TNavigation
-  mainTitle: {
+  mainTitle?: {
     firstRow: string
     secondRow: string
   }
-  videoSettings: {
+  videoSettings?: {
     url: string
     width: number
     height: number
   }
-  afterBannerMiddleText: string
-  cards: TCardsItem[]
+  afterBannerMiddleText?: string
+  cards?: TCardsItem[]
   footer: {
     text: string
   }
