@@ -7,7 +7,7 @@ export const homePageMock: THomePage = {
     title: 'in-Cloud',
     menuItems: [
       { label: 'inCloud', href: '/' },
-      { label: 'Документация', href: '/in-cloud-console-docs/docs/' },
+      { label: 'Документация', href: '/docs/' },
     ],
   },
   mainTitle: {
