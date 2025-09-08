@@ -8,11 +8,6 @@ type TNavigation = {
   }[]
 }
 
-type TCardsItem = {
-  title: string
-  text: string
-}
-
 export type THomePage = {
   meta: TMeta
   navigation: TNavigation
@@ -25,8 +20,59 @@ export type THomePage = {
     width: number
     height: number
   }
-  afterBannerMiddleText?: string
-  cards?: TCardsItem[]
+  darkLine?: {
+    title: string
+    description: string
+    docs: {
+      text: string
+      link: string
+    }
+    features: string[]
+  }
+  k8sToday?: {
+    title: string
+    description: string
+    cards: {
+      title: string
+      text: string
+    }[]
+  }
+  entryPoint?: {
+    title: string
+    text: string
+    cards: {
+      title: string
+      text: string
+    }[]
+  }
+  advantages?: {
+    title: string
+    cards: {
+      title: string
+      text: string
+    }[]
+  }
+  whomFits?: {
+    title: string
+    cards: {
+      title: string
+      text: string
+    }[]
+  }
+  whatDiffers?: {
+    title: string
+    cards: {
+      title: string
+      text: string
+    }[]
+  }
+  contactUs?: {
+    title: string
+    mail: string
+    mailLink: string
+    tg: string
+    tgLink: string
+  }
   footer: {
     text: string
   }

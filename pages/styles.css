@@ -7,6 +7,13 @@
   height: 1543px;
 } */
 
+*,
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
 #medusa-stage {
   position: fixed; /* stays fixed in viewport */
   top: 0;

@@ -34,7 +34,6 @@ const RightPart = styled.div`
 `
 
 const Navbar = styled.div`
-  font-family: 'Roboto', sans-serif;
   display: flex;
   gap: 30px;
 

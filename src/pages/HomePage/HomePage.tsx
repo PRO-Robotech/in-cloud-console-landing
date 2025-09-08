@@ -7,8 +7,14 @@ import {
   HeaderSecondRow,
   MarginTopContainer,
   VideoRow,
-  AfterBannerRow,
-  Cards,
+  DarkLine,
+  BackgroundContainer,
+  K8sToday,
+  EntryPoint,
+  Advantages,
+  WhomFits,
+  WhatDiffers,
+  ContactUs,
   Footer,
 } from '@components'
 
@@ -16,8 +22,13 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
   navigation,
   mainTitle,
   videoSettings,
-  afterBannerMiddleText,
-  cards,
+  darkLine,
+  k8sToday,
+  entryPoint,
+  advantages,
+  whomFits,
+  whatDiffers,
+  contactUs,
   footer,
 }) => {
   return (
@@ -37,20 +48,17 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
             <VideoRow videoSettings={videoSettings} />
           </>
         )}
-        {afterBannerMiddleText && (
-          <>
-            <Spacer $space={60} $samespace />
-            <AfterBannerRow afterBannerMiddleText={afterBannerMiddleText} />
-          </>
-        )}
-        {cards && (
-          <>
-            <Spacer $space={100} $samespace />
-            <Cards cards={cards} />
-          </>
-        )}
-        <Spacer $space={75} $samespace />
-        <Footer footer={footer} />
+        {darkLine && <DarkLine darkLine={darkLine} />}
+        <BackgroundContainer>
+          {k8sToday && <K8sToday k8sToday={k8sToday} />}
+          {entryPoint && <EntryPoint entryPoint={entryPoint} />}
+          {advantages && <Advantages advantages={advantages} />}
+          {whomFits && <WhomFits whomFits={whomFits} />}
+          {whatDiffers && <WhatDiffers whatDiffers={whatDiffers} />}
+          {contactUs && <ContactUs contactUs={contactUs} />}
+          <Spacer $space={40} $samespace />
+          <Footer footer={footer} />
+        </BackgroundContainer>
       </MarginTopContainer>
     </HomeTemplate>
   )

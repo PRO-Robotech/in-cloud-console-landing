@@ -9,7 +9,6 @@ const K8sTitle = styled.div`
   padding-right: 10px;
   padding-left: 10px;
 
-  color: rgba(255, 255, 255, 1);
   font-family: 'Roboto Condensed';
   font-weight: 700;
   font-size: 60px;
@@ -22,7 +21,6 @@ const MainTitle = styled.div`
 
   font-size: 120px;
   line-height: 98%;
-  letter-spacing: 0%;
   text-align: center;
   text-shadow: 0px 5px 10px rgba(0, 0, 0, 1);
 `
