@@ -31,7 +31,7 @@ export const homePageMock: THomePage = {
     description: `Одна консоль для кластеров, сервисов и приложений.<br /><span>Быстрее. Дешевле. Прозрачнее.</span>`,
     docs: {
       text: 'Документация',
-      link: '/in-cloud-console-docs/docs/',
+      link: '/docs/tech-docs/introduction',
     },
     features: ['Лицензия MIT', 'Декларативный UI', 'OpenAPI', 'Вектор на NoCode'],
   },
