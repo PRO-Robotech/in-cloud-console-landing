@@ -34,7 +34,6 @@ const RightPart = styled.div`
 `
 
 const Navbar = styled.div`
-  font-family: 'Roboto', sans-serif;
   display: flex;
   gap: 30px;
 
@@ -44,15 +43,6 @@ const Navbar = styled.div`
     font-size: 20px;
     font-weight: 400;
     position: relative;
-  }
-
-  a:first-child::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    margin-top: 8px;
   }
 `
 

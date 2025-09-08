@@ -1,0 +1,7 @@
+export { HeaderIcon } from './HeaderIcon'
+export { DarkLineIcon } from './DarkLineIcon'
+export { EntryPointIcon } from './EntryPointIcon'
+export { WhomFitsIcon } from './WhomFitsIcon'
+export { ContactUsIcon } from './ContactUsIcon'
+export { MailIcon } from './MailIcon'
+export { TelegramIcon } from './TelegramIcon'
