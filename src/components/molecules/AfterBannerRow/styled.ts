@@ -8,7 +8,7 @@ const AfterBannerContainer = styled.div`
   border: 3px solid rgba(255, 255, 255, 1);
   background: rgba(21, 35, 46, 1);
 
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;

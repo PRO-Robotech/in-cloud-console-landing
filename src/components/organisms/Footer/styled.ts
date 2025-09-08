@@ -7,7 +7,7 @@ const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;

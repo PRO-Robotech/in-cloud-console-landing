@@ -20,7 +20,7 @@ const LeftPart = styled.div`
 `
 
 const TitleFont = styled.div`
-  font-family: 'Comfortaa', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -34,7 +34,7 @@ const RightPart = styled.div`
 `
 
 const Navbar = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   gap: 30px;
 

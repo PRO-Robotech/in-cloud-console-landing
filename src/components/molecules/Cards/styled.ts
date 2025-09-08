@@ -16,7 +16,7 @@ const Card = styled.div`
 `
 
 const CardTitle = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
@@ -29,7 +29,7 @@ const CardTitle = styled.div`
 `
 
 const CardText = styled.div`
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 130%;
