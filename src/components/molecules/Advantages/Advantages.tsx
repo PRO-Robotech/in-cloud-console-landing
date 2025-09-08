@@ -6,7 +6,7 @@ import { Styled } from './styled'
 
 export const Advantages: FC<Pick<THomePage, 'advantages'>> = ({ advantages }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="advantages">
       <Styled.Title dangerouslySetInnerHTML={{ __html: advantages.title }} />
       <Spacer $space={40} $samespace />
       <Styled.CardsGrid>

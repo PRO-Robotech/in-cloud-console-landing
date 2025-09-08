@@ -6,7 +6,7 @@ import { Styled } from './styled'
 
 export const EntryPoint: FC<Pick<THomePage, 'entryPoint'>> = ({ entryPoint }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="solution">
       <Styled.Title dangerouslySetInnerHTML={{ __html: entryPoint.title }} />
       <Styled.MainGrid>
         <div>

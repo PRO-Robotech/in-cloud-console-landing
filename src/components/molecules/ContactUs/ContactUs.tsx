@@ -6,7 +6,7 @@ import { Styled } from './styled'
 
 export const ContactUs: FC<Pick<THomePage, 'contactUs'>> = ({ contactUs }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="contacts">
       <Styled.Title dangerouslySetInnerHTML={{ __html: contactUs.title }} />
       <Styled.WidthContainer>
         <Styled.ContactsContainer>

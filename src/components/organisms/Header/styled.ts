@@ -44,15 +44,6 @@ const Navbar = styled.div`
     font-weight: 400;
     position: relative;
   }
-
-  a:first-child::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    margin-top: 8px;
-  }
 `
 
 export const Styled = {

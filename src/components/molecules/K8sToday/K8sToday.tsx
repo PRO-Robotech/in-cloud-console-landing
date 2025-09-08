@@ -5,7 +5,7 @@ import { Styled } from './styled'
 
 export const K8sToday: FC<Pick<THomePage, 'k8sToday'>> = ({ k8sToday }) => {
   return (
-    <Styled.K8sTodayContainer>
+    <Styled.K8sTodayContainer id="pr">
       <Styled.Title dangerouslySetInnerHTML={{ __html: k8sToday.title }} />
       <Styled.Description dangerouslySetInnerHTML={{ __html: k8sToday.description }} />
       <Styled.CardsGrid>

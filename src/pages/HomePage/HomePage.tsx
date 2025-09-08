@@ -33,6 +33,7 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
 }) => {
   return (
     <HomeTemplate>
+      <div id="start" />
       <div id="medusa-root" />
       <Header navigation={navigation} />
       <MarginTopContainer $margin="107px">

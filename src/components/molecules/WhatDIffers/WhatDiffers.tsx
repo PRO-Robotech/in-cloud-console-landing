@@ -6,7 +6,7 @@ import { Styled } from './styled'
 
 export const WhatDiffers: FC<Pick<THomePage, 'whatDiffers'>> = ({ whatDiffers }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id="diffs">
       <Styled.Title dangerouslySetInnerHTML={{ __html: whatDiffers.title }} />
       <Spacer $space={40} $samespace />
       <Styled.CardsGrid>

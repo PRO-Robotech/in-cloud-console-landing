@@ -4,7 +4,9 @@ type TNavigation = {
   title: string
   menuItems: {
     label: string
-    href: string
+    href?: string
+    internalHref?: string
+    isButton?: boolean
   }[]
 }
 

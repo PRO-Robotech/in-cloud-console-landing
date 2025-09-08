@@ -6,8 +6,14 @@ export const homePageMock: THomePage = {
   navigation: {
     title: 'in-Cloud',
     menuItems: [
-      { label: 'inCloud', href: '/' },
-      { label: 'Документация', href: '/in-cloud-console-docs/docs/' },
+      { label: 'inCloud', internalHref: '#start' },
+      { label: 'Проблема', internalHref: '#pr' },
+      { label: 'Решение', internalHref: '#solution' },
+      { label: 'Преимущества', internalHref: '#advantages' },
+      { label: 'Кому подходит', internalHref: '#fits' },
+      { label: 'Отличия', internalHref: '#diffs' },
+      // { label: 'Документация', href: '/in-cloud-console-docs/docs/' },
+      { label: 'Попробовать', internalHref: '#contacts', isButton: true },
     ],
   },
   mainTitle: {

@@ -1,4 +1,5 @@
+export * from './Icons'
 export { MarginTopContainer } from './MarginTopContainer'
 export { Spacer } from './Spacer'
 export { BackgroundContainer } from './BackgroundContainer'
-export * from './Icons'
+export { ScrollLink } from './ScrollLink'
