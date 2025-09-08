@@ -11,8 +11,8 @@ export const homePageMock: THomePage = {
     ],
   },
   mainTitle: {
-    firstRow: 'in-Cloud',
-    secondRow: 'console',
+    firstRow: 'KUBERNETES',
+    secondRow: 'in-Cloud console',
   },
   videoSettings: {
     // url: 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4', // mp4 only

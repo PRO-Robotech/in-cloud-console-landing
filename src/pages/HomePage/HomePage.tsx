@@ -27,19 +27,19 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
       <MarginTopContainer $margin="107px">
         {mainTitle && (
           <>
-            <Spacer $space={50} $samespace />
+            <Spacer $space={40} $samespace />
             <HeaderSecondRow mainTitle={mainTitle} />
           </>
         )}
         {videoSettings && (
           <>
-            <Spacer $space={30} $samespace />
+            <Spacer $space={60} $samespace />
             <VideoRow videoSettings={videoSettings} />
           </>
         )}
         {afterBannerMiddleText && (
           <>
-            <Spacer $space={50} $samespace />
+            <Spacer $space={60} $samespace />
             <AfterBannerRow afterBannerMiddleText={afterBannerMiddleText} />
           </>
         )}

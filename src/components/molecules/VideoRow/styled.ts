@@ -10,7 +10,7 @@ const VideoContainer = styled.div<TVideoContainerProps>`
   height: ${({ $height }) => $height}px;
   background: rgba(56, 56, 56, 1);
   margin: 0 auto;
-  box-shadow: 0px 10px 20px 0px rgba(0, 146, 255, 1);
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
 
   video {
     width: ${({ $width }) => $width}px;
