@@ -1,0 +1,1 @@
+export { WhomFitsIcon } from './WhomFitsIcon'

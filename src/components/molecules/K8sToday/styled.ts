@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 const K8sTodayContainer = styled.div`
+  max-width: 1280px;
+  margin: 0 auto;
   padding: 40px 80px;
   display: flex;
-  flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-flow: column;
   gap: 40px;
 `
 
@@ -26,6 +28,7 @@ const Description = styled.div`
 `
 
 const CardsGrid = styled.div`
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;

@@ -1,0 +1,1 @@
+export { EntryPointIcon } from './EntryPointIcon'
