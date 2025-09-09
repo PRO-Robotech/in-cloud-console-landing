@@ -113,8 +113,8 @@ const RightIcon = styled.div`
     margin-right: -20px;
 
     @media (min-width: 1440px) {
-      width: 585;
-      height: 610;
+      width: 585px;
+      height: 610px;
       margin-right: initial;
     }
   }

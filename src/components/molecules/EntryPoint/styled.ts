@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   max-width: 90%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -37,9 +37,11 @@ const Title = styled.div`
 const MainGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(2, 1fr);
+    width: initial;
   }
 `
 
@@ -89,6 +91,11 @@ const RightFlex = styled.div`
   display: flex;
   gap: 20px;
   flex-flow: column;
+  align-items: center;
+
+  @media (min-width: 1440px) {
+    align-items: initial;
+  }
 `
 
 type TCardProps = {
