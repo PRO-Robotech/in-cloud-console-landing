@@ -2,21 +2,21 @@ import styled from 'styled-components'
 
 const K8sTitle = styled.div`
   background: rgba(0, 146, 255, 1);
-  width: 140px;
+  width: min-content;
   height: 26px;
   margin: 0 auto;
   gap: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 4px;
 
   font-family: 'Roboto Condensed';
   font-weight: 700;
   font-size: 26px;
   text-align: center;
+  line-height: 1;
 
   @media (min-width: 1440px) {
     font-size: 60px;
-    width: 346px;
+    padding: 0 10px;
     height: 60px;
   }
 `
