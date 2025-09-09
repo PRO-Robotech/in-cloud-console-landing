@@ -60,6 +60,7 @@ const CardTitle = styled.div`
   text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `
