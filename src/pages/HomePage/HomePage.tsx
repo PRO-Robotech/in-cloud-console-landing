@@ -43,12 +43,8 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
             <HeaderSecondRow mainTitle={mainTitle} />
           </>
         )}
-        {videoSettings && (
-          <>
-            <Spacer $space={60} $spaceMob={26} />
-            <VideoRow videoSettings={videoSettings} />
-          </>
-        )}
+        <Spacer $space={60} $spaceMob={26} />
+        {videoSettings && <VideoRow videoSettings={videoSettings} />}
         {darkLine && <DarkLine darkLine={darkLine} />}
         <BackgroundContainer>
           {k8sToday && <K8sToday k8sToday={k8sToday} />}

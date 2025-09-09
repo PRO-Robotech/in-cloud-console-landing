@@ -38,15 +38,16 @@ const CardsGrid = styled.div`
 
 const Card = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: column;
-  padding: 10px;
+  padding: 15px 10px;
   border-radius: 20px;
   background: #111c25;
 
   @media (min-width: 1440px) {
     padding: 40px 50px;
+    justify-content: center;
     align-items: flex-start;
   }
 `
