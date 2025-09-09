@@ -11,6 +11,12 @@ const CustomLink = styled.a<TCustomLinkProps>`
   background: ${({ $isButton }) => ($isButton ? 'rgba(0, 146, 255, 1)' : 'initial')};
   margin-top: ${({ $isButton }) => ($isButton ? '-8px' : 'initial')};
 
+  display: ${({ $isButton }) => ($isButton ? 'initial' : 'none')};
+
+  @media (min-width: 1440px) {
+    display: initial;
+  }
+
   &&::after {
     content: '';
     display: ${({ $isButton }) => ($isButton ? 'none' : 'block')};

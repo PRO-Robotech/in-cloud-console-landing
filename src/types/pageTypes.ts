@@ -21,6 +21,8 @@ export type THomePage = {
     url: string
     width: number
     height: number
+    widthMob: number
+    heightMob: number
   }
   darkLine?: {
     title: string

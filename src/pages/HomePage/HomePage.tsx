@@ -36,16 +36,16 @@ export const HomePage: FC<Omit<THomePage, 'meta'>> = ({
       <div id="start" />
       <div id="medusa-root" />
       <Header navigation={navigation} />
-      <MarginTopContainer $margin="107px">
+      <MarginTopContainer $margin="107px" $marginMob="55px">
         {mainTitle && (
           <>
-            <Spacer $space={40} $samespace />
+            <Spacer $space={40} $spaceMob={14} />
             <HeaderSecondRow mainTitle={mainTitle} />
           </>
         )}
         {videoSettings && (
           <>
-            <Spacer $space={60} $samespace />
+            <Spacer $space={60} $spaceMob={26} />
             <VideoRow videoSettings={videoSettings} />
           </>
         )}
