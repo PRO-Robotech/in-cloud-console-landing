@@ -115,8 +115,12 @@ const SecondRow = styled.div`
 
 const SecondRowGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, minmax(187px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 10px;
+
+  @media (min-width: 425px) {
+    grid-template-columns: repeat(2, minmax(187px, 1fr));
+  }
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(4, 220px);

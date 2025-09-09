@@ -39,7 +39,11 @@ const WidthContainer = styled.div`
   width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 140px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 425px) {
+    grid-template-columns: 1fr 140px;
+  }
 
   @media (min-width: 1024px) {
     width: 777px;
@@ -88,7 +92,15 @@ const IconContainer = styled.div`
   svg {
     width: 139.4px;
     height: 148.56px;
-    margin-top: -36px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+
+    @media (min-width: 425px) {
+      display: initial;
+      margin: -36px 0 0 0;
+    }
 
     @media (min-width: 1024px) {
       width: 303px;
