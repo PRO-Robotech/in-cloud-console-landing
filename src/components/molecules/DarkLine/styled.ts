@@ -8,6 +8,8 @@ const FirstRow = styled.div`
   padding: 80px 0 40px 0;
   background: #111c25;
   padding: 47px 20px 20px 20px;
+  position: relative;
+  z-index: 2;
 
   @media (min-width: 1440px) {
     padding: 80px 0 21px 0;
