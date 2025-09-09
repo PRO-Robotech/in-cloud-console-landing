@@ -6,13 +6,18 @@ import { Styled } from './styled'
 export const VideoRow: FC<Pick<THomePage, 'videoSettings'>> = ({ videoSettings }) => {
   return (
     <>
-      <Styled.VideoContainer $width={videoSettings.width} $height={videoSettings.height}>
+      <Styled.VideoContainer
+        $width={videoSettings.width}
+        $height={videoSettings.height}
+        $widthMob={videoSettings.widthMob}
+        $heightMob={videoSettings.heightMob}
+      >
         <video autoPlay loop muted playsInline>
           <source src={videoSettings.url} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </Styled.VideoContainer>
-      <Spacer $space={60} $samespace />
+      <Spacer $space={60} $spaceMob={14} />
     </>
   )
 }

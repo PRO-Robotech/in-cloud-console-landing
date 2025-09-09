@@ -7,7 +7,7 @@ export const HeaderSecondRow: FC<Pick<THomePage, 'mainTitle'>> = ({ mainTitle })
   return (
     <>
       <Styled.K8sTitle>{mainTitle.firstRow}</Styled.K8sTitle>
-      <Spacer $space={20} $samespace />
+      <Spacer $space={20} $spaceMob={14} />
       <Styled.MainTitle>{mainTitle.secondRow}</Styled.MainTitle>
     </>
   )

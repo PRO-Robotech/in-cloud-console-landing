@@ -25,6 +25,8 @@ export const homePageMock: THomePage = {
     url: '', // mp4 only
     width: 766,
     height: 440,
+    widthMob: 420,
+    heightMob: 240,
   },
   darkLine: {
     title: `Наведите порядок<br />в <span>Kubernetes</span>‑хаосе`,

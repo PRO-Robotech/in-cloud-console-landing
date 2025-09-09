@@ -19,7 +19,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 906px;
+  /* height: 438px; */
+  height: 460px;
   background: #15232e;
   z-index: -1; /* pushes it behind all content */
 }
@@ -28,5 +29,18 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 906px;
+  /* height: 438px; */
+  height: 460px;
+}
+
+@media (min-width: 1024px) {
+  #medusa-stage {
+    width: 100%;
+    height: 906px;
+  }
+
+  .medusa-container {
+    width: 100%;
+    height: 906px;
+  }
 }

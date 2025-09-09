@@ -11,7 +11,7 @@ export const EntryPoint: FC<Pick<THomePage, 'entryPoint'>> = ({ entryPoint }) =>
       <Styled.MainGrid>
         <div>
           <Styled.LeftText dangerouslySetInnerHTML={{ __html: entryPoint.text }} />
-          <Styled.LeftIcon>
+          <Styled.LeftIcon $hideMobile>
             <EntryPointIcon />
           </Styled.LeftIcon>
         </div>
@@ -32,6 +32,9 @@ export const EntryPoint: FC<Pick<THomePage, 'entryPoint'>> = ({ entryPoint }) =>
           </Styled.RightFlex>
         </div>
       </Styled.MainGrid>
+      <Styled.LeftIcon $hideDesktop>
+        <EntryPointIcon />
+      </Styled.LeftIcon>
     </Styled.Container>
   )
 }

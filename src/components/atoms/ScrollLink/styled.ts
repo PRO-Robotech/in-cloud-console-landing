@@ -3,6 +3,7 @@ import styled from 'styled-components'
 type TCustomLinkProps = {
   $active?: boolean
   $isButton?: boolean
+  $mobMenu?: boolean
 }
 
 const CustomLink = styled.a<TCustomLinkProps>`
@@ -10,6 +11,17 @@ const CustomLink = styled.a<TCustomLinkProps>`
   border-radius: ${({ $isButton }) => ($isButton ? '8px' : 'initial')};
   background: ${({ $isButton }) => ($isButton ? 'rgba(0, 146, 255, 1)' : 'initial')};
   margin-top: ${({ $isButton }) => ($isButton ? '-8px' : 'initial')};
+
+  display: ${({ $isButton, $mobMenu }) => {
+    if ($mobMenu) {
+      return 'initial'
+    }
+    return $isButton ? 'initial' : 'none'
+  }};
+
+  @media (min-width: 1440px) {
+    display: initial;
+  }
 
   &&::after {
     content: '';

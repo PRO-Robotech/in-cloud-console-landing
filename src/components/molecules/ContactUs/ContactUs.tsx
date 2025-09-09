@@ -23,9 +23,9 @@ export const ContactUs: FC<Pick<THomePage, 'contactUs'>> = ({ contactUs }) => {
             </Styled.ContactsItemLink>
           </div>
         </Styled.ContactsContainer>
-        <div>
+        <Styled.IconContainer>
           <ContactUsIcon />
-        </div>
+        </Styled.IconContainer>
       </Styled.WidthContainer>
     </Styled.Container>
   )
