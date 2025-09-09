@@ -92,8 +92,10 @@ const RightFlex = styled.div`
   gap: 20px;
   flex-flow: column;
   align-items: center;
+  margin-top: 20px;
 
   @media (min-width: 1440px) {
+    margin-top: initial;
     align-items: initial;
   }
 `
@@ -107,16 +109,18 @@ const Card = styled.div<TCardProps>`
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 10px;
+  padding: 20px 10px;
+  width: 100%;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.2);
-  min-height: 180px;
+  min-height: 114px;
   box-sizing: border-box;
 
   @media (min-width: 1440px) {
     align-items: flex-start;
     padding: 16px 40px;
     width: 364px;
+    min-height: 180px;
     margin-left: ${({ $marginLeft }) => $marginLeft}px;
   }
 `
@@ -126,8 +130,10 @@ const CardTitle = styled.div`
   font-size: 14px;
   line-height: 100%;
   margin-bottom: 10px;
+  text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `
@@ -136,8 +142,10 @@ const CardText = styled.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `

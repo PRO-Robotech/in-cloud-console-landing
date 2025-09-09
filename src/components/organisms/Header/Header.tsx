@@ -1,29 +1,27 @@
-// import React, { FC, useState, useEffect, useRef, useMemo, useCallback } from 'react'
-import React, { FC, useState, useEffect, useMemo, useCallback } from 'react'
+// import React, { FC, useState, useEffect, useMemo, useCallback } from 'react'
+import React, { FC, useState, useEffect, useCallback } from 'react'
 import { THomePage } from '@localTypes/pageTypes'
 import { HamburgerIcon, HeaderIcon, ScrollLink } from 'src/components/atoms'
-import { useActiveSection } from 'src/hooks/useActiveSection'
+// import { useActiveSection } from 'src/hooks/useActiveSection'
 import { Styled } from './styled'
 
 export const Header: FC<Pick<THomePage, 'navigation'>> = ({ navigation }) => {
   const [isOpen, setIsOpen] = useState(false)
-  // const panelRef = useRef<HTMLDivElement | null>(null)
-  // const buttonRef = useRef<HTMLButtonElement | null>(null)
 
-  const internalIds = useMemo(() => {
-    return navigation.menuItems
-      .map(({ internalHref, isButton }) => {
-        if (internalHref && !isButton) {
-          return internalHref?.slice(1)
-        }
-        return undefined
-      })
-      .filter((id): id is string => Boolean(id))
-  }, [navigation.menuItems])
+  // const internalIds = useMemo(() => {
+  //   return navigation.menuItems
+  //     .map(({ internalHref, isButton }) => {
+  //       if (internalHref && !isButton) {
+  //         return internalHref?.slice(1)
+  //       }
+  //       return undefined
+  //     })
+  //     .filter((id): id is string => Boolean(id))
+  // }, [navigation.menuItems])
 
-  const activeId = useActiveSection(internalIds, {
-    minVisibleRatio: 0.9,
-  })
+  // const activeId = useActiveSection(internalIds, {
+  //   minVisibleRatio: 0.9,
+  // })
 
   const closeMenu = useCallback(() => setIsOpen(false), [])
 
@@ -79,7 +77,7 @@ export const Header: FC<Pick<THomePage, 'navigation'>> = ({ navigation }) => {
                 <ScrollLink
                   key={label}
                   to={internalHref}
-                  active={activeId === internalHref.slice(1)}
+                  // active={activeId === internalHref.slice(1)}
                   isButton={isButton}
                 >
                   {label}
@@ -115,7 +113,7 @@ export const Header: FC<Pick<THomePage, 'navigation'>> = ({ navigation }) => {
                 <ScrollLink
                   key={label}
                   to={internalHref}
-                  active={activeId === internalHref.slice(1)}
+                  // active={activeId === internalHref.slice(1)}
                   isButton={isButton}
                   onItemClick={onItemClick}
                   mobMenu

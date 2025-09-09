@@ -41,7 +41,7 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 20px;
   background: #111c25;
 
@@ -58,8 +58,10 @@ const CardTitle = styled.div`
   font-size: 14px;
   line-height: 100%;
   margin-bottom: 10px;
+  text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `
@@ -68,12 +70,14 @@ const CardText = styled.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  text-align: center;
 
   span {
     color: rgba(0, 146, 255, 1);
   }
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const K8sTodayContainer = styled.div`
   max-width: 90%;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -59,12 +59,10 @@ const Card = styled.div`
   align-items: center;
   flex-flow: column;
 
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 20px 10px;
   border-radius: 20px;
-  border-width: 3px;
 
-  border: 6px solid rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0, 0, 0, 0.2);
 
   @media (min-width: 1440px) {
     padding-right: 40px;

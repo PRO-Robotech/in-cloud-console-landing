@@ -62,7 +62,7 @@ const Card = styled.div<TCardProps>`
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  padding: 10px;
+  padding: 20px 10px;
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
@@ -81,8 +81,10 @@ const CardTitle = styled.div`
   font-size: 14px;
   line-height: 100%;
   margin-bottom: 10px;
+  text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `
@@ -91,8 +93,10 @@ const CardText = styled.div`
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  text-align: center;
 
   @media (min-width: 1440px) {
+    text-align: initial;
     font-size: 20px;
   }
 `

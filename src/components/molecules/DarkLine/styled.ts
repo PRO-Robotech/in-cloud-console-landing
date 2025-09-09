@@ -118,6 +118,10 @@ const SecondRowGrid = styled.div`
   grid-template-columns: 1fr;
   grid-gap: 10px;
 
+  @media (min-width: 375px) {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
   @media (min-width: 425px) {
     grid-template-columns: repeat(2, minmax(187px, 1fr));
   }
@@ -128,7 +132,7 @@ const SecondRowGrid = styled.div`
 `
 
 const Feature = styled.div`
-  padding: 10px;
+  padding: 5px;
   border-radius: 20px;
   border-width: 1px;
   border: 1px solid rgba(255, 255, 255, 1);
@@ -138,6 +142,10 @@ const Feature = styled.div`
   font-size: 12px;
   line-height: 100%;
   text-align: center;
+
+  @media (min-width: 425px) {
+    padding: 10px;
+  }
 
   @media (min-width: 1440px) {
     font-size: 20px;

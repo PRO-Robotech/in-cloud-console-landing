@@ -6,7 +6,7 @@ type TMetas = {
 
 export const Metas: TMetas = {
   homepage: {
-    title: 'Homepage',
-    description: 'Homepage',
+    title: 'in-Cloud console',
+    description: 'Одна Kubernetes консоль для кластеров, сервисов и приложений',
   },
 }

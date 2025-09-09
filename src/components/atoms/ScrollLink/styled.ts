@@ -23,7 +23,7 @@ const CustomLink = styled.a<TCustomLinkProps>`
     display: initial;
   }
 
-  &&::after {
+  /* &&::after {
     content: '';
     display: ${({ $isButton }) => ($isButton ? 'none' : 'block')};
     width: 100%;
@@ -36,7 +36,7 @@ const CustomLink = styled.a<TCustomLinkProps>`
     transition:
       opacity 0.2s ease,
       transform 0.2s ease;
-  }
+  } */
 `
 
 export const Styled = {

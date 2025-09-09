@@ -15,7 +15,7 @@ export const ScrollLink: FC<TScrollLinkProps> = ({
   to,
   offset = -100,
   children,
-  active,
+  active = false,
   isButton,
   onItemClick,
   mobMenu,
