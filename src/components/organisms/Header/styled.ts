@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   box-sizing: border-box;
   height: 55px;
   padding: 4px;
+  z-index: 3;
 
   @media (min-width: 1024px) {
     height: 107px;
