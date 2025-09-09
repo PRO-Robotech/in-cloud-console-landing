@@ -6,7 +6,7 @@ export const homePageMock: THomePage = {
   navigation: {
     title: 'in-Cloud',
     menuItems: [
-      { label: 'inCloud', internalHref: '#start' },
+      { label: 'in-Cloud', internalHref: '#start' },
       { label: 'Проблема', internalHref: '#pr' },
       { label: 'Решение', internalHref: '#solution' },
       { label: 'Преимущества', internalHref: '#advantages' },
